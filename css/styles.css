@@ -1,0 +1,19 @@
+h1, h3{
+    text-align: center;
+    color: white;
+}
+
+h3{
+    padding-top: 400px;
+}
+
+body {
+    background-image: url("../images/foggy-1149180_1920.jpg");
+    /*https: //pixabay.com/photos/foggy-forest-mystery-fog-landscape-1149180/*/
+
+    /*Images are all free for commercial use and do not require attribution*/
+    /*https: //pixabay.com/photos/ocean-sea-water-surf-coastline-3992688/*/
+    /*https: //pixabay.com/photos/sea-black-and-white-nature-1031262/*/
+    /*https: //pixabay.com/photos/nature-landscape-travel-snow-3048072/*/
+    /*https: //pixabay.com/photos/tree-trunk-branch-row-row-of-trees-3207716/*/
+}

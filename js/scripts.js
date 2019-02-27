@@ -4,6 +4,7 @@ var l3 = document.getElementById("text");
 var l4 = document.getElementById("text");
 var l5 = document.getElementById("text");
 var title = document.getElementById("title");
+var textSize = 70;
 
 
 document.getElementById("clickMe").onclick = function () {
@@ -32,6 +33,9 @@ function Line2() {
     l2.innerHTML = 'There is a rapture on the lonley shore,';
     document.getElementById("backgroundImage").style.backgroundImage = "url('images/sea-1031262_1920.jpg')";
     //https://pixabay.com/photos/sea-black-and-white-nature-1031262/
+    l2.ondblclick = function(){
+        sizeIncrease()
+    };
 }
 
 function Line3(){
@@ -65,3 +69,8 @@ function mouseOut(){
     l2.style.color = "#76E7CD";
 }
 
+
+function sizeIncrease(){
+    l2.style.cssText = "font-size: 160px";
+    l2.style.color = "purple";
+}

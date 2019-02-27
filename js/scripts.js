@@ -1,12 +1,7 @@
 var l1 = document.getElementById("text");
 var title = document.getElementById("title");
-
 var img = document.getElementById("backgroundImage");
-
 var textSize = 70;
-
-
-
 
 
 
@@ -16,11 +11,9 @@ document.getElementById("clickMe").onclick = function() {
 };
 
 
-document.onscroll = ScrollNext;
+window.onscroll = ScrollNext;
 
 function ScrollNext() {
-    //Figure out height
-    // Decide which Line() to call
 
     var scrollPosition = window.scrollY;
     var height = window.innerHeight;
@@ -29,17 +22,14 @@ function ScrollNext() {
 
     //If scrollPosition == height then #1
     if(scrollPosition = height) {
-       Line1();    }
-    else if(scrollPosition > height && scrollPosition >= height*2){
+       Line1();    
+    } else if(scrollPosition >= height*2 && scrollPosition <= height*2){
         Line2();
-    }
-    else if(scrollPosition >= height*2 && scrollPosition > height*3){
+    } else if(scrollPosition > height*2 && scrollPosition <= height*3){
         Line3();
-    }
-    else if(scrollPosition >= height*3 && scrollPosition > height*4){
+    } else if(scrollPosition > height*3 && scrollPosition <= height*4){
         Line4();
-    }
-    else {
+    } else {
         Line5();
     }
     
@@ -50,23 +40,20 @@ function ScrollNext() {
 
 }
 
-// if (scrollPosition == ) {
 function Line1() {
-    
-    
     l1.innerHTML = 'There is a pleasure in the pathless woods,';
     img.style.backgroundImage = "url('images/tree-3207716_1920.jpg')";
     //https: //pixabay.com/photos/tree-trunk-branch-row-row-of-trees-3207716/
 
     //mouseEvent from https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_onmouseenter_dom
     
-    // l1.onmouseenter = function(){
-    //     mouseOver()
-    // };
-    // l1.onmouseout = function(){
-    //     mouseOut()
-    // };
-}//} 
+    l1.onmouseenter = function(){
+        mouseOver()
+    };
+    l1.onmouseout = function(){
+        mouseOut()
+    };
+}
 
 
 function Line2() {    
@@ -87,8 +74,8 @@ function Line4(){
     l1.innerHTML = 'By the deep sea, and music in its roar:';
     img.style.backgroundImage = "url('images/ocean-3992688_1920.jpg')";
     //https://pixabay.com/photos/ocean-sea-water-surf-coastline-3992688/
-
 }
+
 
 function Line5(){
     l1.innerHTML = 'I love not man the less, but nature more';
@@ -96,21 +83,19 @@ function Line5(){
     //https://pixabay.com/photos/roses-black-white-macro-flower-2744274/
 }
 
-//     //mouseEvent from https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_onmouseenter_dom
-// function mouseOver(){
-//     l1.style.color = "#F865B0";
-// }
 
-// function mouseOut(){
-//     l1.style.color = "#76E7CD";
-// }
+    //mouseEvent from https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_onmouseenter_dom
+function mouseOver(){
+    l1.style.color = "#F865B0";
+}
 
-// function mouseIn() {
-//     l1.style.color = "#76E7CD";
-// }
+function mouseOut(){
+    l1.style.color = "#76E7CD";
+}
 
-
-
+function mouseIn() {
+    l1.style.color = "#76E7CD";
+}
 
 function sizeIncrease(){
     l1.style.cssText = "font-size: 160px";

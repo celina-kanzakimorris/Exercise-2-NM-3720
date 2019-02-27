@@ -27,6 +27,7 @@ h2{
 }
 
 body {
+    background-size: 100%;
     background-image: url("../images/foggy-1149180_1920.jpg");
     /*https: //pixabay.com/photos/foggy-forest-mystery-fog-landscape-1149180/*/
 }

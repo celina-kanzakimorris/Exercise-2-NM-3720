@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Great+Vibes');
 
+
+html, body {
+    min-height: 100%;
+    margin: 0;
+}
+
 h1, h2{
     text-align: center;
     color: white;

@@ -1,10 +1,10 @@
 var l1 = document.getElementById("text");
 var title = document.getElementById("title");
-<<<<<<< HEAD
+
 var img = document.getElementById("backgroundImage");
-=======
+
 var textSize = 70;
->>>>>>> ab47d4934af27133c2d322b0eff66b4522ec9df9
+
 
 
 
@@ -25,20 +25,25 @@ function ScrollNext() {
     var scrollPosition = window.scrollY;
     var height = window.innerHeight;
 
+    var distOne = Math.abs(scrollPosition - 0);
+        var distTwo = Math.abs(scrollPosition - height);
+        var distThree = Math.abs(scrollPosition - height*2);
+        var distFour = Math.abs(scrollPosition - height*3);
+        var distFive = Math.abs(scrollPosition - height*4);
+
     //If scrollPosition == height then #1
-    if(scrollPosition <= height) {
-        Line1();
-    }
-    else if(scrollPosition <= height*2){
+    if(scrollPosition = height) {
+       Line1();    }
+    else if(scrollPosition > height && scrollPosition >= height*2){
         Line2();
     }
-    else if(scrollPosition <= height*3){
+    else if(scrollPosition >= height*2 && scrollPosition > height*3){
         Line3();
     }
-    else if(scrollPosition <= height*4){
+    else if(scrollPosition >= height*3 && scrollPosition > height*4){
         Line4();
     }
-    else{
+    else {
         Line5();
     }
     
@@ -110,12 +115,9 @@ function Line5(){
 
 
 
-<<<<<<< HEAD
-//
-=======
 
 function sizeIncrease(){
-    l2.style.cssText = "font-size: 160px";
-    l2.style.color = "purple";
+    l1.style.cssText = "font-size: 160px";
+    l1.style.color = "purple";
 }
->>>>>>> ab47d4934af27133c2d322b0eff66b4522ec9df9
+

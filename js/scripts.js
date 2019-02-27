@@ -1,6 +1,10 @@
 var l1 = document.getElementById("text");
 var title = document.getElementById("title");
+<<<<<<< HEAD
 var img = document.getElementById("backgroundImage");
+=======
+var textSize = 70;
+>>>>>>> ab47d4934af27133c2d322b0eff66b4522ec9df9
 
 
 
@@ -68,8 +72,7 @@ function Line2() {
     l1.innerHTML = "There is a rapture on the lonley shore,";
     img.style.backgroundImage = "url('images/sea-1031262_1920.jpg')";
     //https://pixabay.com/photos/sea-black-and-white-nature-1031262/
-    
-} 
+}
 
 
 function Line3() {    
@@ -107,4 +110,12 @@ function Line5(){
 
 
 
+<<<<<<< HEAD
 //
+=======
+
+function sizeIncrease(){
+    l2.style.cssText = "font-size: 160px";
+    l2.style.color = "purple";
+}
+>>>>>>> ab47d4934af27133c2d322b0eff66b4522ec9df9

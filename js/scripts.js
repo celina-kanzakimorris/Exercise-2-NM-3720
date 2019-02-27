@@ -25,11 +25,7 @@ function ScrollNext() {
     var scrollPosition = window.scrollY;
     var height = window.innerHeight;
 
-    var distOne = Math.abs(scrollPosition - 0);
-        var distTwo = Math.abs(scrollPosition - height);
-        var distThree = Math.abs(scrollPosition - height*2);
-        var distFour = Math.abs(scrollPosition - height*3);
-        var distFive = Math.abs(scrollPosition - height*4);
+
 
     //If scrollPosition == height then #1
     if(scrollPosition = height) {
